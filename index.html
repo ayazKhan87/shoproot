@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopRoot - Connect with Local Shops</title>
+    <title>Knoc - Connect with Local Shops</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Ample+Display:wght@400;500;600;700&display=swap');
+
         body {
             font-family: 'Inter', sans-serif;
         }
-        
+
+        .knoc-logo {
+            font-family: 'Ample Display', sans-serif;
+        }
+
         .gradient-bg {
             background: linear-gradient(135deg, #7E57C2 0%, #512DA8 100%);
         }
-        
+
         .hero-gradient {
             background: linear-gradient(135deg, #EDE7F6 0%, #D1C4E9 100%);
         }
-        
+
         .feature-card {
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(126, 87, 194, 0.1);
         }
-        
+
         .custom-button {
             transition: transform 0.2s;
         }
-        
+
         .custom-button:hover {
             transform: translateY(-2px);
         }
@@ -78,9 +83,8 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation remains the same -->
+    <!-- Navigation -->
     <nav class="gradient-bg text-white sticky top-0 z-50 backdrop-blur-lg bg-opacity-90">
-        <!-- Navigation content remains the same -->
         <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +92,7 @@
                     <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2"/>
                     <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2"/>
                 </svg>
-                <span class="text-2xl font-bold">ShopRoot</span>
+                <span class="text-2xl font-bold knoc-logo">Knoc</span>
             </div>
             <div class="desktop-menu space-x-8">
                 <a href="#features" class="hover:text-purple-200 transition">Features</a>
@@ -136,13 +140,12 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 px-4 sm:px-0">
-                    <img src="mainImage.png" alt="ShopRoot App Interface" class="app-preview-image w-full rounded-xl shadow-2xl">
+                    <img src="mainImage.png" alt="Knoc App Interface" class="app-preview-image w-full rounded-xl shadow-2xl">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Rest of the content (Features and Footer) remains the same -->
     <!-- Features Section -->
     <div id="features" class="py-12 sm:py-24">
         <div class="container mx-auto px-4 sm:px-6">
@@ -153,72 +156,3 @@
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"/>
                         </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Product Inquiries</h3>
-                    <p class="text-gray-600 leading-relaxed">Post inquiries for specific products and receive responses from local shops in your area within minutes.</p>
-                </div>
-                <div class="feature-card bg-white p-6 sm:p-8 rounded-xl shadow-sm">
-                    <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Shop Directory</h3>
-                    <p class="text-gray-600 leading-relaxed">Browse through our curated directory of local shops and discover unique products and services in your neighborhood.</p>
-                </div>
-                <div class="feature-card bg-white p-6 sm:p-8 rounded-xl shadow-sm">
-                    <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Real-time Updates</h3>
-                    <p class="text-gray-600 leading-relaxed">Stay informed with instant notifications when shops respond to your inquiries or when new shops join in your area.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 sm:py-16">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
-                <div>
-                    <div class="flex items-center space-x-2 mb-6">
-                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white"/>
-                            <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2"/>
-                            <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2"/>
-                        </svg>
-                        <span class="text-2xl font-bold">ShopRoot</span>
-                    </div>
-                    <p class="text-gray-400">Connecting local shops with customers in your neighborhood.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Legal</h4>
-                    <ul class="space-y-4 text-gray-400">
-                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Download App</h4>
-                    <button class="w-full bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                        Coming Soon
-                    </button>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 ShopRoot. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('active');
-        }
-    </script>
-</body>
-</html>
