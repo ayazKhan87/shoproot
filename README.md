@@ -1,6 +1,6 @@
-# ShopRoot Website
+# knoc Website
 
-This repository contains the landing page and legal documentation for the ShopRoot mobile application.
+This repository contains the landing page and legal documentation for the knoc mobile application.
 
 ## Pages
 
@@ -32,7 +32,7 @@ Custom Purple Colors:
 
 ## Deployment
 
-The site is deployed using GitHub Pages at: `https://[username].github.io/shoprootwebpage`
+The site is deployed using GitHub Pages at: `https://[username].github.io/knocwebpage`
 
 ## Updates
 
